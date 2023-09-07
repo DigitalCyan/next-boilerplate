@@ -7,17 +7,27 @@ interface IContainerProps extends IClassNameProps, IChildrenProps {
   fill?: boolean;
   responsive?: boolean;
   center?: boolean;
+  screen?: boolean;
 }
 
-const Container = ({flow = true, fill = false, responsive = false, center = true, className, children}: IContainerProps) => {
+const Container = ({
+  flow = false,
+  fill = false,
+  responsive = false,
+  center = true,
+  screen = false,
+  className,
+  children
+}: IContainerProps) => {
   return (
     <div
       className={classNames(
-        "flex gap-10",
+        "relative flex gap-10",
         flow && "w-full",
         fill && "w-full h-full",
         responsive ? "flex-col lg:flex-row" : "flex-col",
         center && "items-center justify-center",
+        screen && "min-h-[100svh] w-screen items-center justify-center",
         className
       )}
     >
