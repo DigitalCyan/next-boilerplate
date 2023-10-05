@@ -3,6 +3,7 @@ import type {Metadata} from 'next';
 import {Inter} from 'next/font/google';
 import IChildrenProps from "@/interfaces/children-props";
 import classNames from "@/util/classNames";
+import Navbar from "@/components/_core/navbar";
 
 const inter = Inter({subsets: ['latin']});
 
@@ -17,6 +18,7 @@ const RootLayout = ({children}: IChildrenProps) => {
     <body className={classNames(
       "w-screen h-[100svh] bg-background-dark text-text"
     )}>
+    <Navbar />
     {children}
     </body>
     </html>

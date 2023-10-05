@@ -1,14 +1,11 @@
-import Image from 'next/image';
 import PageWrapper from "@/components/_core/containers/page-wrapper";
 import Container from "@/components/_core/containers/container";
 import Title from "@/components/_core/text/title";
 import TextWrapper from "@/components/_core/containers/text-wrapper";
-import {BsCode} from "react-icons/bs";
 import {AiFillCode} from "react-icons/ai";
 import Text from "@/components/_core/text/text";
 import {TbBrandNextjs, TbBrandTailwind} from "react-icons/tb";
 import {SiHeadlessui} from "react-icons/si";
-import {VscReactions} from "react-icons/vsc";
 import {BiLogoReact} from "react-icons/bi";
 
 const Home = () => {
