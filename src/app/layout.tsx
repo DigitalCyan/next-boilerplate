@@ -4,6 +4,7 @@ import {Inter} from 'next/font/google';
 import IChildrenProps from "@/interfaces/children-props";
 import classNames from "@/util/classNames";
 import Navbar from "@/components/_core/navbar";
+import Menu from "@/components/_core/menu";
 
 const inter = Inter({subsets: ['latin']});
 
@@ -13,12 +14,16 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({children}: IChildrenProps) => {
+
   return (
     <html lang="en">
-    <body className={classNames(
-      "w-screen h-[100svh] bg-background-dark text-text"
-    )}>
-    <Navbar />
+    <body
+      className={classNames(
+        "w-screen h-[100svh] bg-background-dark text-text",
+        inter.className
+      )}
+    >
+    <Menu />
     {children}
     </body>
     </html>

@@ -10,7 +10,7 @@ const PageWrapper = ({className, children}: IPageWrapperProps) => {
     <div
       className={
         classNames(
-          "flex flex-col items-center gap-10 w-full h-[100svh] overflow-y-scroll",
+          "flex flex-col items-center gap-10 w-screen h-[100svh] overflow-y-scroll pb-20",
           className
         )}
     >

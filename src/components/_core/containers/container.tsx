@@ -27,7 +27,7 @@ const Container = ({
         fill && "w-full h-full",
         responsive ? "flex-col lg:flex-row" : "flex-col",
         center && "items-center justify-center",
-        screen && "min-h-[100svh] w-screen items-center justify-center",
+        screen && "min-h-[100svh] w-full items-center justify-center",
         className
       )}
     >

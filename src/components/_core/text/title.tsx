@@ -3,10 +3,10 @@ import ChildrenProps from "@/interfaces/children-props";
 import classNames from "@/util/classNames";
 
 const titleSizes: Record<Size, string> = {
-  xl: "text-8xl",
-  lg: "text-7xl",
-  md: "text-6xl",
-  sm: "text-5xl",
+  xl: "text-5xl lg:text-8xl",
+  lg: "text-4xl lg:text-7xl",
+  md: "text-3xl lg:text-6xl",
+  sm: "text-2xl lg:text-5xl",
 };
 
 interface ITitleProps extends ClassnameProps, ChildrenProps {

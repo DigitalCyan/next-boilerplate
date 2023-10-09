@@ -10,8 +10,8 @@ import {BiLogoReact} from "react-icons/bi";
 
 const Home = () => {
   return (
-    <PageWrapper className="pb-20">
-      <Container className="p-10 bg-background shadow" screen>
+    <PageWrapper>
+      <Container className="bg-background shadow" screen>
         <Container responsive flow={false}>
           <Container>
             <TextWrapper center={false} className="w-max">

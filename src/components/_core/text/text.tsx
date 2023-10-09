@@ -13,7 +13,7 @@ const Text = ({align = "center", bold = false, className, children}: ITextProps)
     <p
       className={
         classNames(
-          "text-xl max-w-xl",
+          "text-lg lg:text-xl max-w-xl",
           bold && "font-bold",
           align === "center"
             ? "text-center"
