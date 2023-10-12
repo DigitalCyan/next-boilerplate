@@ -7,6 +7,7 @@ import Text from "@/components/_core/text/text";
 import {TbBrandNextjs, TbBrandTailwind} from "react-icons/tb";
 import {SiHeadlessui} from "react-icons/si";
 import {BiLogoReact} from "react-icons/bi";
+import ModalExample from "@/app/modal-example";
 
 const Home = () => {
   return (
@@ -63,6 +64,12 @@ const Home = () => {
             </div>
           </Container>
         </Container>
+      </Container>
+
+      <Container flow>
+        <Title>What about modals?</Title>
+        <Text>Yes! We have some basic modal logic too. Click the button below and see for yourself!</Text>
+        <ModalExample />
       </Container>
     </PageWrapper>
   );

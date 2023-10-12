@@ -16,7 +16,11 @@ interface ITitleProps extends ClassnameProps, ChildrenProps {
 const Title = ({size = "md", className, children}: ITitleProps) => {
   return (
     <p
-      className={classNames(titleSizes[size], className)}
+      className={classNames(
+        "text-center",
+        titleSizes[size],
+        className)
+      }
     >
       {children}
     </p>
