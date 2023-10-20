@@ -17,7 +17,7 @@ const Modal = ({show, fullscreen, className, children}: IModalProps) => {
       enter="transition-all duration-500"
       enterFrom="bg-black/[0.0]"
       enterTo="bg-black/[0.5]"
-      leave="transition-all duration-200"
+      leave="transition-all duration-500"
       leaveFrom="bg-black/[0.5]"
       leaveTo="bg-black/[0.0]"
 

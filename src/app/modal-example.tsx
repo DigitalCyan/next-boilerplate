@@ -5,7 +5,6 @@ import Text from "@/components/_core/text/text";
 import {useState} from "react";
 import Button from "@/components/_core/button";
 
-
 const ModalExample = () => {
   const [show, setShow] = useState<boolean>(false);
 

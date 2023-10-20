@@ -13,7 +13,6 @@ interface IButtonProps {
   colorOverride?: string;
 }
 
-
 const Button = ({href, onClick, text, size = "md", colorOverride}: IButtonProps) => {
   const router = useRouter();
 
