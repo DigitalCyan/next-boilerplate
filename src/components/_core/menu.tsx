@@ -2,12 +2,11 @@
 
 import Title from "@/components/_core/text/title";
 import classNames from "@/util/classNames";
-import Button from "@/components/_core/button";
 import {useState} from "react";
 import {Transition} from "@headlessui/react";
 import {HiX} from "react-icons/hi";
-import {CiMenuBurger} from "react-icons/ci";
 import {GiHamburgerMenu} from "react-icons/gi";
+import LinkButton from "@/components/_core/link-button";
 
 const OPTIONS = [
   {
@@ -44,9 +43,9 @@ const Menu = () => {
       >
 
         <Title>Menu</Title>
-        <div className="flex flex-col gap-5 mt-5">
+        <div className="flex flex-col items-center gap-5 mt-5 w-full">
           {OPTIONS.map(({title, href}, i) => (
-            <Button text={title} href={href} key={i} />
+            <LinkButton text={title} href={href} key={i} onClick={() => setOpen(false)} />
           ))}
         </div>
 

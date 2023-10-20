@@ -16,7 +16,7 @@ const Home = () => {
         <Container responsive flow={false}>
           <Container>
             <TextWrapper center={false} className="w-max">
-              <Title size="sm">DigitalCyan&apos;s</Title>
+              <Title size="sm">local.interloper&apos;s</Title>
               <Title size="lg">next-boilerplate</Title>
             </TextWrapper>
           </Container>

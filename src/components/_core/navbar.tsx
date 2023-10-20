@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import Button from "@/components/_core/button";
+import LinkButton from "@/components/_core/link-button";
 
 const OPTIONS = [
   {
@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 z-40 w-full flex flex-row items-center justify-evenly p-5 backdrop-blur shadow-xl">
       {OPTIONS.map(({href, text}, i) => (
-        <Button size="sm" key={i} href={href} text={text} />
+        <LinkButton size="sm" key={i} href={href} text={text} />
       ))}
     </div>
   );
