@@ -3,23 +3,24 @@
 import Text from "@/components/_core/text/text";
 import classNames from "@/util/classNames";
 import {useRouter} from "next/navigation";
-import {BUTTON_SIZEMAP} from "@/util/sizemaps";
 
 interface IButtonProps {
   href?: string;
   onClick: () => void;
   text: string;
-  size?: Size;
+  flow?: boolean;
   colorOverride?: string;
 }
 
-const Button = ({href, onClick, text, size = "md", colorOverride}: IButtonProps) => {
+const Button = ({href, onClick, text, flow = false, colorOverride}: IButtonProps) => {
   const router = useRouter();
 
   const className = classNames(
-    "flex justify-center items-center rounded-lg shadow-md text-black",
-    BUTTON_SIZEMAP[size],
-    colorOverride || "bg-primary"
+    "flex justify-center items-center rounded-lg shadow-md p-5",
+    "border-2 border-primary hover:scale-110 transition-all duration-200",
+    "bg-black/[0.25]",
+    flow && "w-full",
+    colorOverride || "border-primary"
   );
 
   const clickHandler = () => {

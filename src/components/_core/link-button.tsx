@@ -1,27 +1,23 @@
 import Text from "@/components/_core/text/text";
 import classNames from "@/util/classNames";
 import Link from "next/link";
-import {useRouter} from "next/navigation";
-import {BUTTON_SIZEMAP} from "@/util/sizemaps";
 
 interface IButtonProps {
   href: string;
   onClick?: () => void;
   text: string;
-  size?: Size;
+  flow?: boolean
   colorOverride?: string;
   className?: string;
 }
 
-const LinkButton = ({href, onClick, text, size = "md", colorOverride, className: passedClassName}: IButtonProps) => {
+const LinkButton = ({href, onClick, text, flow = false, colorOverride, className: passedClassName}: IButtonProps) => {
   const className = classNames(
     "flex justify-center items-center rounded-lg shadow-md text-black",
-    BUTTON_SIZEMAP[size],
     colorOverride || "bg-primary",
+    flow && "w-full",
     passedClassName
   );
-
-  console.log(BUTTON_SIZEMAP[size]);
 
   return (
     <Link
